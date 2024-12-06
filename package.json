@@ -1,5 +1,5 @@
 {
-  "homepage": "http//floydrise.github.io/grocery-list-react",
+  "homepage": "https://floydrise.github.io/grocery-list-react",
   "name": "grocerylistapp",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
