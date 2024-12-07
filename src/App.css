@@ -16,9 +16,6 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
 #form {
   display: flex;
@@ -33,11 +30,20 @@
   list-style-type: circle;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 
 .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  display: flex; /* Keep flexbox for layout */
+  align-items: center; /* Vertically center-align content */
+  gap: 15px; /* Space between the elements in each list item */
+  position: relative; /* Allows for custom bullet placement */
+}
+
+.list::before {
+  content: "👀️"; /* Adds a bullet point */
+  position: absolute; /* Position relative to the list item */
+  left: -30px; /* Adjust based on padding and spacing */
+  font-size: 1.5em; /* Adjust size of the bullet */
+  color: black; /* Customize bullet color */
 }
