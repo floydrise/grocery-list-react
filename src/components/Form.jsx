@@ -24,7 +24,7 @@ const Form = ({ setItems }) => {
       <input
         id="new-item"
         type="text"
-        placeholder="New item here..."
+        placeholder="New item here ✍️"
         onChange={handleChange}
         value={input}
       ></input>

@@ -11,15 +11,15 @@ const List = () => {
 
     return (
         <main>
-            <h2>Things to buy</h2>
+            <h2>To buy:</h2>
             <ul className="unlist">
                 {items.map((item, index) => {
                     return (
                         <li className="list" key={index}>
                             <strong>{item}</strong>
-                            <input size="9" placeholder="measurement"/>
+                            <input size="9" placeholder="amount ⚖️"/>
                             <select>
-                                <option>Choose</option>
+                                <option>Unit</option>
                                 <option value="kg">kg</option>
                                 <option value="g">g</option>
                                 <option value="l">l</option>
