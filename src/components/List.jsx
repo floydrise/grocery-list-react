@@ -26,7 +26,7 @@ const List = () => {
                                 <option value="ml">ml</option>
                                 <option value="quantity">quantity</option>
                             </select>
-                            <button type="button" onClick={() => removeItem(index)}>
+                            <button className="remove-btn" type="button" onClick={() => removeItem(index)}>
                                 ❌
                             </button>
                         </li>
